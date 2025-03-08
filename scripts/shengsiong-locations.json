@@ -1,387 +1,541 @@
 [
     {
-        "address": "Blk 161 Ang Mo Kio Avenue 4 #01-504 Singapore 560161",
-        "time": " Open 24 Hours - with $TM Service",
-        "phone": " +65 6908 4553"
+        "is24Hour": true,
+        "postal_code": "560161",
+        "address1": "Blk 161 Ang Mo Kio Avenue 4",
+        "lat": 1.3704365,
+        "long": 103.8366486
     },
     {
-        "address": "2 Ang Mo Kio Drive #A1-12 Singapore 567720",
-        "time": " Open 7.00am - 10.00pm",
-        "phone": " +65 6481 1959"
+        "is24Hour": false,
+        "postal_code": "567720",
+        "address1": "2 Ang Mo Kio Drive",
+        "lat": 1.3775869,
+        "long": 103.8563216
     },
     {
-        "address": "Blk 351 Anchorvale Road #01-05 Singapore 540351",
-        "time": " Open 24 Hours - with $TM Service",
-        "phone": " +65 6214 3191"
+        "is24Hour": true,
+        "postal_code": "540351",
+        "address1": "Blk 351 Anchorvale Road",
+        "lat": 1.3927999,
+        "long": 103.8870397
     },
     {
-        "address": "Blk 338 Anchorvale Crescent #01-11 Singapore 540338",
-        "time": " Open 7.00am - 11.00pm - with $TM Service",
-        "phone": " +65 6282 1503"
+        "is24Hour": false,
+        "postal_code": "540338",
+        "address1": "Blk 338 Anchorvale Crescent",
+        "lat": 1.3988998,
+        "long": 103.8894266
     },
     {
-        "address": "Blk 122 Ang Mo Kio Avenue 3 #01-1753/1755 Singapore 560122",
-        "time": " Open 24 Hours - with $TM Service",
-        "phone": " +65 6454 9908"
+        "is24Hour": true,
+        "postal_code": "560122",
+        "address1": "Blk 122 Ang Mo Kio Avenue 3",
+        "lat": 1.28967,
+        "long": 103.85007
     },
     {
-        "address": "Blk 233 Ang Mo Kio Avenue 3 #01-1168 Singapore 560233",
-        "time": " Open 24 Hours - with $TM Service",
-        "phone": " +65 6451 0234"
+        "is24Hour": true,
+        "postal_code": "560233",
+        "address1": "Blk 233 Ang Mo Kio Avenue 3",
+        "lat": 1.28967,
+        "long": 103.85007
     },
     {
-        "address": "Blk 301 Punggol Central #01-01 Singapore 820301",
-        "time": " Open 24 Hours - with $TM Service",
-        "phone": " +65 6484 6582"
+        "is24Hour": true,
+        "postal_code": "820301",
+        "address1": "Blk 301 Punggol Central",
+        "lat": 1.4040152,
+        "long": 103.9065771
     },
     {
-        "address": "Blk 671 Edgefield Plains #02-01 Singapore 820671",
-        "time": " Open 7.00am - 11.00pm",
-        "phone": " +65 6908 8276"
+        "is24Hour": false,
+        "postal_code": "820671",
+        "address1": "Blk 671 Edgefield Plains",
+        "lat": 1.3990941,
+        "long": 103.9076522
     },
     {
-        "address": "Blk 473 Fernvale Street #01-06 Singapore 790473",
-        "time": " Open 24 Hours - with $TM Service",
-        "phone": " +65 6634 0195"
+        "is24Hour": true,
+        "postal_code": "790473",
+        "address1": "Blk 473 Fernvale Street",
+        "lat": 1.28967,
+        "long": 103.85007
     },
     {
-        "address": "Blk 417 Fernvale Link #01-11 Singapore 790417",
-        "time": " Open 24 Hours - with $TM Service",
-        "phone": " +65 6312 9093"
+        "is24Hour": true,
+        "postal_code": "790417",
+        "address1": "Blk 417 Fernvale Link",
+        "lat": 1.28967,
+        "long": 103.85007
     },
     {
-        "address": "Blk 465 Fernvale Road #01-05 Singapore 790465",
-        "time": " Open 24 Hours - with $TM Service",
-        "phone": " +65 6592 5481"
+        "is24Hour": true,
+        "postal_code": "790465",
+        "address1": "Blk 465 Fernvale Road",
+        "lat": 1.3930092,
+        "long": 103.8759264
     },
     {
-        "address": "Blk 455 Sengkang West Avenue #01-16 Singapore 790455",
-        "time": " Open 24 hours - with $TM Service",
-        "phone": " +65 6514 6386"
+        "is24Hour": true,
+        "postal_code": "790455",
+        "address1": "Blk 455 Sengkang West Avenue",
+        "lat": 1.28967,
+        "long": 103.85007
     },
     {
-        "address": "377 Hougang Street 32 #B1-01 Hougang RiverCourt Singapore 530377",
-        "time": " Open 7.00am - 11.00pm - with $TM Service",
-        "phone": " +65 6239 5204"
+        "is24Hour": false,
+        "postal_code": "530377",
+        "address1": "377 Hougang Street 32",
+        "lat": 1.3627031,
+        "long": 103.8947219
     },
     {
-        "address": "231 Sumang Lane #01-02 Singapore 820231",
-        "time": " Open 24 Hours - with $TM Service",
-        "phone": " +65 6441 3061"
+        "is24Hour": true,
+        "postal_code": "820231",
+        "address1": "231 Sumang Lane",
+        "lat": 1.4021381,
+        "long": 103.8922247
     },
     {
-        "address": "312A Sumang Link #01-04 Singapore 821312",
-        "time": " Open 24 Hours - with $TM Service",
-        "phone": " +65 6384 4585"
+        "is24Hour": true,
+        "postal_code": "821312",
+        "address1": "312A Sumang Link",
+        "lat": 1.4108912,
+        "long": 103.9003818
     },
     {
-        "address": "19 Serangoon North Avenue 5 Singapore 554913",
-        "time": " Open 24 Hours - with $TM Service",
-        "phone": " +65 6481 1218"
+        "is24Hour": true,
+        "postal_code": "554913",
+        "address1": "19 Serangoon North Avenue 5 Singapore 554913",
+        "lat": 1.3760912,
+        "long": 103.8720312
     },
     {
-        "address": "Blk 660A Edgedale Plains #01-01 Singapore 821660",
-        "time": " Open 24 Hours - with $TM Service",
-        "phone": " +65 6481 6679"
+        "is24Hour": true,
+        "postal_code": "821660",
+        "address1": "Blk 660A Edgedale Plains",
+        "lat": 1.28967,
+        "long": 103.85007
     },
     {
-        "address": "Blk 154A Bukit Batok West Avenue 8 #01-01 (Stall #1) Singapore 651154",
-        "time": " Bukit Batok Blk 159 #01-178 (Ext. Store) Open 24 Hours - with $TM Service",
-        "phone": " +65 6899 0013"
+        "is24Hour": true,
+        "postal_code": "651154",
+        "address1": "Blk 154A Bukit Batok West Avenue 8",
+        "lat": 1.3474108,
+        "long": 103.7437478
     },
     {
-        "address": "Blk 420A Clementi Avenue 1 #01-01 Singapore 121420",
-        "time": " Open 24 Hours - with $TM Service",
-        "phone": " +65 6268 9512"
+        "is24Hour": true,
+        "postal_code": "121420",
+        "address1": "Blk 420A Clementi Avenue 1",
+        "lat": 1.3101851,
+        "long": 103.7691503
     },
     {
-        "address": "Blk 352 Clementi Avenue 2 #01-91/99 Singapore 120352",
-        "time": " Open 24 Hours",
-        "phone": " +65 6777 0668"
+        "is24Hour": true,
+        "postal_code": "120352",
+        "address1": "Blk 352 Clementi Avenue 2",
+        "lat": 1.3150735,
+        "long": 103.7693037
     },
     {
-        "address": "Blk 209A Clementi Avenue 6 #01-01 Singapore 121209",
-        "time": " Open 24 Hours - with $TM Service",
-        "phone": " +65 6320 3665"
+        "is24Hour": true,
+        "postal_code": "121209",
+        "address1": "Blk 209A Clementi Avenue 6",
+        "lat": 1.28967,
+        "long": 103.85007
     },
     {
-        "address": "Blk 720 Clementi West Street 2 #01-144 Singapore 120720",
-        "time": " Open 24 Hours - with $TM Service",
-        "phone": " +65 6773 6212"
+        "is24Hour": true,
+        "postal_code": "120720",
+        "address1": "Blk 720 Clementi West Street 2",
+        "lat": 1.3051145,
+        "long": 103.7627215
     },
     {
-        "address": "Blk 446 Fajar Road #01-01 Singapore 670446",
-        "time": " Open 24 Hours",
-        "phone": " +65 6769 3828"
+        "is24Hour": true,
+        "postal_code": "670446",
+        "address1": "Blk 446 Fajar Road",
+        "lat": 1.384015,
+        "long": 103.7710298
     },
     {
-        "address": "7 Jurong West Avenue 5 #01-01/08 Singapore 649486",
-        "time": " Open 7.00am - 12.00am - with $TM Service",
-        "phone": " +65 6794 2829"
+        "is24Hour": false,
+        "postal_code": "649486",
+        "address1": "7 Jurong West Avenue 5",
+        "lat": 1.3487508,
+        "long": 103.7032901
     },
     {
-        "address": "1 Woodlands Road #01-07 Singapore 677899",
-        "time": " Open 7.00am - 11.00pm - with $TM Service",
-        "phone": " +65 6219 3106"
+        "is24Hour": false,
+        "postal_code": "677899",
+        "address1": "1 Woodlands Road",
+        "lat": 1.3803675,
+        "long": 103.7601674
     },
     {
-        "address": "3 Yuan Ching Rd #01-01A/02 Singapore 618642",
-        "time": " Open 24 Hours - with $TM Service",
-        "phone": " +65 6262 4166"
+        "is24Hour": true,
+        "postal_code": "618642",
+        "address1": "3 Yuan Ching Rd",
+        "lat": 1.3255871,
+        "long": 103.7251859
     },
     {
-        "address": "Blk 544 Jurong West Street 42 #01-97/99 Singapore 640544",
-        "time": " Open 24 Hours - with $TM Service",
-        "phone": " +65 6562 2820"
+        "is24Hour": true,
+        "postal_code": "640544",
+        "address1": "Blk 544 Jurong West Street 42",
+        "lat": 1.3524003,
+        "long": 103.7254959
     },
     {
-        "address": "Blk 547 Segar Road #01-06 Singapore 670547",
-        "time": " Open 24 Hours - with $TM Service",
-        "phone": " +65 6250 0664"
+        "is24Hour": true,
+        "postal_code": "670547",
+        "address1": "Blk 547 Segar Road",
+        "lat": 1.28967,
+        "long": 103.85007
     },
     {
-        "address": "Blk 643 Senja Close #01-01 Singapore 670643",
-        "time": " Open 7.00am - 11.00pm - with $TM Service",
-        "phone": " +65 6592 5767"
+        "is24Hour": false,
+        "postal_code": "670643",
+        "address1": "Blk 643 Senja Close",
+        "lat": 1.3885931,
+        "long": 103.7624263
     },
     {
-        "address": "292 Bukit Batok East Avenue 6 #01-02 Singapore 650292",
-        "time": " Open 24 Hours - with $TM Service",
-        "phone": " +65 6252 3924"
+        "is24Hour": true,
+        "postal_code": "650292",
+        "address1": "292 Bukit Batok East Avenue 6",
+        "lat": 1.3444117,
+        "long": 103.7553664
     },
     {
-        "address": "Blk 61 Teban Gardens Road #01-21 Singapore 600061",
-        "time": " Open 24 Hours - with $TM Service",
-        "phone": " +65 6896 6401"
+        "is24Hour": true,
+        "postal_code": "600061",
+        "address1": "Blk 61 Teban Gardens Road",
+        "lat": 1.3221125,
+        "long": 103.738207
     },
     {
-        "address": "Blk 18 Teck Whye Lane #01-95 Singapore 680018",
-        "time": " Open 24 Hours - with $TM Service",
-        "phone": " +65 6875 0103"
+        "is24Hour": true,
+        "postal_code": "680018",
+        "address1": "Blk 18 Teck Whye Lane",
+        "lat": 1.3794976,
+        "long": 103.7550232
     },
     {
-        "address": "Blk 467 Bukit Batok West Avenue 9 #01-01 Singapore 650467",
-        "time": " Open 7.00am - 11.00pm - with $TM Service",
-        "phone": " +65 65130193"
+        "is24Hour": false,
+        "postal_code": "650467",
+        "address1": "Blk 467 Bukit Batok West Avenue 9",
+        "lat": 1.28967,
+        "long": 103.85007
     },
     {
-        "address": "Blk 440 Bukit Batok West Avenue 8 #01-10 Singapore 650440",
-        "time": " Open 24 Hours - with $TM Service",
-        "phone": " +65 6251 3324"
+        "is24Hour": true,
+        "postal_code": "650440",
+        "address1": "Blk 440 Bukit Batok West Avenue 8",
+        "lat": 1.3545644,
+        "long": 103.7388818
     },
     {
-        "address": "451 Bukit Batok West Avenue 6 #01-10 Singapore 650451",
-        "time": " Open 7.00am - 11.00pm - with $TM Service",
-        "phone": " +65 6254 2505"
+        "is24Hour": false,
+        "postal_code": "650451",
+        "address1": "451 Bukit Batok West Avenue 6",
+        "lat": 1.353062,
+        "long": 103.7439983
     },
     {
-        "address": "Blk 105 Canberra Street #02-05 Singapore 750105",
-        "time": " Open 24 hours - with $TM Service",
-        "phone": " +65 6251 2692"
+        "is24Hour": true,
+        "postal_code": "750105",
+        "address1": "Blk 105 Canberra Street",
+        "lat": 1.4487455,
+        "long": 103.8324847
     },
     {
-        "address": "Blk 675 Yishun Avenue 4 #01-10 Singapore 760675",
-        "time": " Open 24 Hours - with $TM Service",
-        "phone": " +65 6257 0949"
+        "is24Hour": true,
+        "postal_code": "760675",
+        "address1": "Blk 675 Yishun Avenue 4",
+        "lat": 1.4190997,
+        "long": 103.8410464
     },
     {
-        "address": "Blk 471B Yishun Street 42 #01-01 Singapore 762471",
-        "time": " Open 24 Hours - with $TM Service",
-        "phone": " +65 6322 7765"
+        "is24Hour": true,
+        "postal_code": "762471",
+        "address1": "Blk 471B Yishun Street 42",
+        "lat": 1.28967,
+        "long": 103.85007
     },
     {
-        "address": "Blk 301 Woodlands Street 31 #01-217 Singapore 730301",
-        "time": " Open 24 Hours - with $TM Service",
-        "phone": " +65 6362 3061"
+        "is24Hour": true,
+        "postal_code": "730301",
+        "address1": "Blk 301 Woodlands Street 31",
+        "lat": 1.28967,
+        "long": 103.85007
     },
     {
-        "address": "18 Yishun Avenue 9 #02-06 / #02-10 Singapore 768897",
-        "time": " Open 7.00am - 11.00pm - with $TM Service",
-        "phone": " +65 6252 9026"
+        "is24Hour": false,
+        "postal_code": "768897",
+        "address1": "18 Yishun Avenue 9",
+        "lat": 1.4356561,
+        "long": 103.8436266
     },
     {
-        "address": "Blk 845 Yishun Street 81 #01-184 Singapore 760845",
-        "time": " Open 24 Hours - with $TM Service",
-        "phone": " +65 6755 7383"
+        "is24Hour": true,
+        "postal_code": "760845",
+        "address1": "Blk 845 Yishun Street 81",
+        "lat": 1.4151615,
+        "long": 103.8368725
     },
     {
-        "address": "Blk 202 Marsiling Drive #01-138 Singapore 730202",
-        "time": " Open 24 Hours - with $TM Service",
-        "phone": " +65 6235 0750"
+        "is24Hour": true,
+        "postal_code": "730202",
+        "address1": "Blk 202 Marsiling Drive",
+        "lat": 1.4435851,
+        "long": 103.7737834
     },
     {
-        "address": "Blk 182 Woodlands Street 13 #01-01 Singapore 730182",
-        "time": " Open 24 Hours - with $TM Service",
-        "phone": " +65 6219 3057"
+        "is24Hour": true,
+        "postal_code": "730182",
+        "address1": "Blk 182 Woodlands Street 13",
+        "lat": 1.28967,
+        "long": 103.85007
     },
     {
-        "address": "Blk 4 Woodlands Street 12 #02-61 Singapore 738623",
-        "time": " Open 7.00am - 12.00am - with $TM Service",
-        "phone": " +65 6362 0352"
+        "is24Hour": false,
+        "postal_code": "738623",
+        "address1": "Blk 4 Woodlands Street 12",
+        "lat": 1.28967,
+        "long": 103.85007
     },
     {
-        "address": "Blk 573 Woodlands Drive 16 #02-01 Singapore 730573",
-        "time": " Open 24 Hours - with $TM Service",
-        "phone": " +65 6219 0063"
+        "is24Hour": true,
+        "postal_code": "730573",
+        "address1": "Blk 573 Woodlands Drive 16",
+        "lat": 1.28967,
+        "long": 103.85007
     },
     {
-        "address": "200 Woodlands Industrial Park E7 #01-30 Singapore 757177",
-        "time": " Open 7.00am - 12.00am - with $TM Service",
-        "phone": " +65 6365 6162"
+        "is24Hour": false,
+        "postal_code": "757177",
+        "address1": "200 Woodlands Industrial Park E7",
+        "lat": 1.4507862,
+        "long": 103.7968231
     },
     {
-        "address": "Blk 785E Woodlands Rise #01-01 Singapore 735785",
-        "time": " Open 24 Hours - with $TM Service",
-        "phone": " +65 6259 0316"
+        "is24Hour": true,
+        "postal_code": "735785",
+        "address1": "Blk 785E Woodlands Rise",
+        "lat": 1.28967,
+        "long": 103.85007
     },
     {
-        "address": "Blk 118 Aljunied Avenue 2 #01-100 Singapore 380118",
-        "time": " Open 7.00am - 11.00pm - with $TM Service",
-        "phone": " +65 6741 0373"
+        "is24Hour": false,
+        "postal_code": "380118",
+        "address1": "Blk 118 Aljunied Avenue 2",
+        "lat": 1.3207264,
+        "long": 103.8867983
     },
     {
-        "address": "Blk 512 Bishan Street 13 #01-524 Singapore 570512",
-        "time": " Open 24 Hours - with $TM Service",
-        "phone": " +65 6550 2385"
+        "is24Hour": true,
+        "postal_code": "570512",
+        "address1": "Blk 512 Bishan Street 13",
+        "lat": 1.3466877,
+        "long": 103.8542618
     },
     {
-        "address": "Blk 11 Upper Boon Keng Road #01-901 Singapore 380011",
-        "time": " Open 24 Hours",
-        "phone": " +65 6747 2780"
+        "is24Hour": true,
+        "postal_code": "380011",
+        "address1": "Blk 11 Upper Boon Keng Road",
+        "lat": 1.3138768,
+        "long": 103.8711999
     },
     {
-        "address": "Blk 52 Chin Swee Road #01-25 Singapore 160052",
-        "time": " Open 24 Hours - with $TM Service",
-        "phone": " +65 6535 0401"
+        "is24Hour": true,
+        "postal_code": "160052",
+        "address1": "Blk 52 Chin Swee Road",
+        "lat": 1.28967,
+        "long": 103.85007
     },
     {
-        "address": "Blk 88 Tanglin Halt Road #01-10 Singapore 141088",
-        "time": " Open 24 Hours",
-        "phone": " +65 6534 8009"
+        "is24Hour": true,
+        "postal_code": "141088",
+        "address1": "Blk 88 Tanglin Halt Road",
+        "lat": 1.28967,
+        "long": 103.85007
     },
     {
-        "address": "Blk 91 Jalan Satu #01-10 Singapore 390091",
-        "time": " Open 7.00am - 11.00pm - with $TM Service",
-        "phone": " +65 6513 4737"
+        "is24Hour": false,
+        "postal_code": "390091",
+        "address1": "Blk 91 Jalan Satu",
+        "lat": 1.28967,
+        "long": 103.85007
     },
     {
-        "address": "301 Geylang Road BCH Building #01-02 Singapore 389344",
-        "time": " Open 24 Hours - with $TM Service",
-        "phone": " +65 6846 1766"
+        "is24Hour": true,
+        "postal_code": "389344",
+        "address1": "301 Geylang Road BCH Building",
+        "lat": 1.28967,
+        "long": 103.85007
     },
     {
-        "address": "25 Ghim Moh Link #01-11 Singapore 270025",
-        "time": " Open 24 Hours - with $TM Service",
-        "phone": " +65 6268 9010"
+        "is24Hour": true,
+        "postal_code": "270025",
+        "address1": "25 Ghim Moh Link",
+        "lat": 1.30822,
+        "long": 103.7864862
     },
     {
-        "address": "1 Jalan Berseh #B1-02/22 New World Centre Singapore 209037",
-        "time": " Open 24 Hours",
-        "phone": " +65 6295 5508"
+        "is24Hour": true,
+        "postal_code": "209037",
+        "address1": "1 Jalan Berseh",
+        "lat": 1.3076427,
+        "long": 103.8572166
     },
     {
-        "address": "Blk 4 Lorong 7 Toa Payoh #01-107 Singapore 310004",
-        "time": " Open 24 Hours - with $TM Service",
-        "phone": " +65 6256 2006"
+        "is24Hour": true,
+        "postal_code": "310004",
+        "address1": "Blk 4 Lorong 7 Toa Payoh",
+        "lat": 1.33611,
+        "long": 103.85
     },
     {
-        "address": "Blk 181 Lorong 4 Toa Payoh #01-602 Singapore 310181",
-        "time": " Open 24 Hours",
-        "phone": " +65 6970 9621"
+        "is24Hour": true,
+        "postal_code": "310181",
+        "address1": "Blk 181 Lorong 4 Toa Payoh",
+        "lat": 1.33611,
+        "long": 103.85
     },
     {
-        "address": "18B Circuit Road #01-260 Singapore 372018",
-        "time": " Open 24 Hours - with $TM Service",
-        "phone": " +65 6747 2610"
+        "is24Hour": true,
+        "postal_code": "372018",
+        "address1": "18B Circuit Road",
+        "lat": 1.3292936,
+        "long": 103.8884814
     },
     {
-        "address": "Blk 108 McNair Road #01-295 Singapore 321108",
-        "time": " Open 24 Hours - with $TM Service",
-        "phone": " +65 6299 3391"
+        "is24Hour": true,
+        "postal_code": "321108",
+        "address1": "Blk 108 McNair Road",
+        "lat": 1.318621,
+        "long": 103.857336
     },
     {
-        "address": "6 Potong Pasir Avenue 2 #01-03 Singapore 358361",
-        "time": " Open 7.00am - 11.00pm",
-        "phone": " +65 69084583"
+        "is24Hour": false,
+        "postal_code": "358361",
+        "address1": "6 Potong Pasir Avenue 2",
+        "lat": 1.3326493,
+        "long": 103.8671612
     },
     {
-        "address": "Blk 410A Sin Ming Avenue #01-02 Singapore 571410",
-        "time": " Open 7:00am - 11:00pm - with $TM Service",
-        "phone": " +65 6970 2893"
+        "is24Hour": false,
+        "postal_code": "571410",
+        "address1": "Blk 410A Sin Ming Avenue",
+        "lat": 1.28967,
+        "long": 103.85007
     },
     {
-        "address": "Blk 31A Margaret Drive #01-03 Singapore 142031",
-        "time": " Open 24 hours - with $TM Service",
-        "phone": " +65 6908 0677"
+        "is24Hour": true,
+        "postal_code": "142031",
+        "address1": "Blk 31A Margaret Drive",
+        "lat": 1.28967,
+        "long": 103.85007
     },
     {
-        "address": "85 Dawson Road #01-01 Singapore 141085",
-        "time": " Open 24 Hours - with $TM Service",
-        "phone": " +65 6475 0386"
+        "is24Hour": true,
+        "postal_code": "141085",
+        "address1": "85 Dawson Road",
+        "lat": 1.2953626,
+        "long": 103.8098025
     },
     {
-        "address": "200 Upper Thomson Road #B1-01 Thomson Imperial Court Singapore 574424",
-        "time": " Open 7.00am - 11.00pm",
-        "phone": " +65 6256 5200"
+        "is24Hour": false,
+        "postal_code": "574424",
+        "address1": "200 Upper Thomson Road",
+        "lat": 1.3519043,
+        "long": 103.8360702
     },
     {
-        "address": "Blk 212 Bidadari Park Drive #03-10 Singapore 360212",
-        "time": " Open 7.00am - 11.00pm - with $TM Service",
-        "phone": " +65 6904 0680"
+        "is24Hour": false,
+        "postal_code": "360212",
+        "address1": "Blk 212 Bidadari Park Drive",
+        "lat": 1.3356099,
+        "long": 103.8718377
     },
     {
-        "address": "Blk 209 New Upper Changi Road #01-631/#02-631 Singapore 460209",
-        "time": " Open 24 Hours",
-        "phone": " +65 6242 2824"
+        "is24Hour": true,
+        "postal_code": "460209",
+        "address1": "Blk 209 New Upper Changi Road",
+        "lat": 1.3244422,
+        "long": 103.9315651
     },
     {
-        "address": "Blk 115 Bedok North Road #01-319 Singapore 460115",
-        "time": " Open 24 Hours - with $TM Service",
-        "phone": " +65 6449 9073"
+        "is24Hour": true,
+        "postal_code": "460115",
+        "address1": "Blk 115 Bedok North Road",
+        "lat": 1.3315691,
+        "long": 103.9352998
     },
     {
-        "address": "Blk 539A Bedok North Street 3 #01-477 Singapore 461539",
-        "time": " Open 24 Hours - with $TM Service",
-        "phone": " +65 6242 1442"
+        "is24Hour": true,
+        "postal_code": "461539",
+        "address1": "Blk 539A Bedok North Street 3",
+        "lat": 1.28967,
+        "long": 103.85007
     },
     {
-        "address": "151 Bedok South Road #01-13 Singapore 460151",
-        "time": " Open 7.00am - 11.00pm - with $TM Service",
-        "phone": " +65 6970 6284"
+        "is24Hour": false,
+        "postal_code": "460151",
+        "address1": "151 Bedok South Road",
+        "lat": 1.3173061,
+        "long": 103.9468047
     },
     {
-        "address": "Blk 527D Pasir Ris Street 51 #01-01 Singapore 514527",
-        "time": " Open 24 Hours - with $TM Service",
-        "phone": " +65 6585 4797"
+        "is24Hour": true,
+        "postal_code": "514527",
+        "address1": "Blk 527D Pasir Ris Street 51",
+        "lat": 1.28967,
+        "long": 103.85007
     },
     {
-        "address": "Blk 623 Elias Road #B1-01 Elias Mall (Stalls #14-16) Singapore 510623",
-        "time": " Open 24 Hours",
-        "phone": " +65 6585 1027"
+        "is24Hour": true,
+        "postal_code": "510623",
+        "address1": "Blk 623 Elias Road",
+        "lat": 1.3780725,
+        "long": 103.9412987
     },
     {
-        "address": "Blk 258 Pasir Ris Street 21 #02-10 Singapore 510258",
-        "time": " Open 7.00am - 11.00pm",
-        "phone": " +65 6386 3258"
+        "is24Hour": false,
+        "postal_code": "510258",
+        "address1": "Blk 258 Pasir Ris Street 21",
+        "lat": 1.28967,
+        "long": 103.85007
     },
     {
-        "address": "Blk 739A Bedok Reservoir Road #01-01 Singapore 471739",
-        "time": " Open 24 Hours",
-        "phone": " +65 6447 8669"
+        "is24Hour": true,
+        "postal_code": "471739",
+        "address1": "Blk 739A Bedok Reservoir Road",
+        "lat": 1.28967,
+        "long": 103.85007
     },
     {
-        "address": "506 Tampines Central 1 #01/02-361 Singapore 520506",
-        "time": " Open 24 Hours",
-        "phone": " +65 6636 1713"
+        "is24Hour": true,
+        "postal_code": "520506",
+        "address1": "506 Tampines Central 1",
+        "lat": 1.3557835,
+        "long": 103.9460012
     },
     {
-        "address": "602A Tampines Avenue 9 #01-01 Singapore 521602",
-        "time": " Open 7.00am - 11.00pm - with $TM Service",
-        "phone": " +65 6513 8365"
+        "is24Hour": false,
+        "postal_code": "521602",
+        "address1": "602A Tampines Avenue 9",
+        "lat": 1.3610119,
+        "long": 103.9374319
     },
     {
-        "address": "872C Tampines Street 86 #02-01 Singapore 523872",
-        "time": " Open 7.00am - 11.00pm - with $TM Service",
-        "phone": " +65 6514 9138"
+        "is24Hour": false,
+        "postal_code": "523872",
+        "address1": "872C Tampines Street 86",
+        "lat": 1.3551116,
+        "long": 103.9315802
     }
 ]

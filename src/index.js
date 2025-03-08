@@ -435,6 +435,7 @@ const formatTime = (datetime, showAMPM = false) => {
 };
 
 import fairpriceLocations from "./fairprice-locations.json";
+import shengsiongLocations from "../scripts/shengsiong-locations.json"
 
 (async () => {
   await mapLoaded;
@@ -464,15 +465,17 @@ import fairpriceLocations from "./fairprice-locations.json";
       if (error) throw error;
       map.addImage("fairprice-logo", image);
     });
+    
+    map.loadImage(require("./shengsiong-logo.png"), (error, image) => {
+      if (error) throw error;
+      map.addImage("shengsiong-logo", image);
+    });
 
     map.addSource("fairprice-locations", {
       type: "geojson",
       data: {
         type: "FeatureCollection",
         features: fairpriceLocations.map((location) => {
-          const is24Hour =
-            location.fromTime == "00:00:00" && location.toTime == "23:59:59";
-
           return {
             type: "Feature",
             geometry: {
@@ -480,11 +483,33 @@ import fairpriceLocations from "./fairprice-locations.json";
               coordinates: [location.long, location.lat],
             },
             properties: {
-              name: location.name + (is24Hour ? " (24h)" : ""),
+              name: location.name + (location.is24Hour ? " (24h)" : ""),
               address: location.address,
               postalCode: location.postalCode,
               phone: location.phone,
               storeType: location.storeType,
+            },
+          };
+        }),
+      },
+    });
+
+    map.addSource("shengsiong-locations", {
+      type: "geojson",
+      data: {
+        type: "FeatureCollection",
+        features: shengsiongLocations.map((location) => {
+          return {
+            type: "Feature",
+            geometry: {
+              type: "Point",
+              coordinates: [location.long, location.lat],
+            },
+            properties: {
+              name: location.address1 + (location.is24Hour ? " (24h)" : ""),
+              address: location.address1,
+              postalCode: location.postalCode,
+              storeType: 'Sheng Siong'
             },
           };
         }),
@@ -515,6 +540,30 @@ import fairpriceLocations from "./fairprice-locations.json";
       },
     });
 
+    map.addLayer({
+      id: "shengsiong-locations",
+      type: "symbol",
+      source: "shengsiong-locations",
+      layout: {
+        "text-field": ["get", "name"],
+        "text-size": ["interpolate", ["linear"], ["zoom"], 13, 0, 14, 14],
+        "text-font": ["DIN Pro Medium", "Arial Unicode MS Regular"],
+        "text-anchor": "bottom",
+        "text-offset": [0, -0.8],
+        "text-max-width": 20,
+        "text-allow-overlap": true,
+        "icon-image": "shengsiong-logo",
+        "icon-size": ["interpolate", ["linear"], ["zoom"], 13, 0.3, 15, 0.5],
+        "icon-ignore-placement": true,
+        "icon-allow-overlap": true,
+      },
+      paint: {
+        "text-halo-color": "#fff",
+        "text-halo-width": 2,
+        "text-halo-blur": 1,
+      },
+    });
+
     // Function to calculate the distance between two coordinates in meters
     function calculateDistance(coord1, coord2) {
       const R = 6371e3; // Earth's radius in meters
@@ -533,21 +582,29 @@ import fairpriceLocations from "./fairprice-locations.json";
 
       return R * c;
     }
+    
+    function filterNearbyLocations (locations, stations, distanceThreshold) {
+      return locations.filter(location => {
+        const locationCoord = [location.long, location.lat]
+        return stations.some(station => {
+          const stationCoord = station.geometry.coordinates
+          return calculateDistance(locationCoord, stationCoord) <= distanceThreshold
+        })
+      })
+    }
 
     // Filter FairPrice locations within 200 meters from any MRT station
-    const nearbyFairpriceLocations = fairpriceLocations.filter((location) => {
-      const fairpriceCoord = [location.long, location.lat];
-      return stationsData.some((station) => {
-        const stationCoord = station.geometry.coordinates;
-        return calculateDistance(fairpriceCoord, stationCoord) <= 200;
-      });
-    });
+    distanceThreshold = 200
+    const nearbyFairpriceLocations = filterNearbyLocations(fairpriceLocations, stationsData, distanceThreshold)
+    const nearbyShengsiongLocations = filterNearbyLocations(shengsiongLocations, stationsData, distanceThreshold)
+    console.log(nearbyShengsiongLocations)
 
     // Function to toggle FairPrice locations
     let showNearby = false;
-    function toggleFairpriceLocations() {
+    function toggleNearbyOutlets() {
       showNearby = !showNearby;
-      const data = showNearby ? nearbyFairpriceLocations : fairpriceLocations;
+
+      let data = showNearby ? nearbyFairpriceLocations : fairpriceLocations;
       map.getSource("fairprice-locations").setData({
         type: "FeatureCollection",
         features: data.map((location) => {
@@ -569,6 +626,29 @@ import fairpriceLocations from "./fairprice-locations.json";
           };
         }),
       });
+      
+      data = showNearby ? nearbyShengsiongLocations : shengsiongLocations
+      map.getSource("shengsiong-locations").setData({
+        type: "FeatureCollection",
+        features: data.map((location) => {
+          return {
+            type: "Feature",
+            geometry: {
+              type: "Point",
+              coordinates: [location.long, location.lat],
+            },
+            properties: {
+              name: location.name + (location.is24Hour ? " (24h)" : ""),
+              address: location.address,
+              postalCode: location.postalCode,
+              phone: location.phone,
+              storeType: location.storeType,
+            },
+          };
+        }),
+      });
+
+
       document.getElementById("toggle-fairprice").textContent = showNearby
         ? "Show All FairPrice Outlet"
         : "Show FairPrice near MRT";
@@ -576,8 +656,8 @@ import fairpriceLocations from "./fairprice-locations.json";
 
     // Add event listener to the button
     document
-      .getElementById("toggle-fairprice")
-      .addEventListener("click", toggleFairpriceLocations);
+      .getElementById('toggle-supermarkets')
+      .addEventListener("click", toggleNearbyOutlets);
   }, 1000);
 
   // extensions end
