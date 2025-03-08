@@ -593,11 +593,14 @@ import shengsiongLocations from "../scripts/shengsiong-locations.json"
       })
     }
 
-    // Filter FairPrice locations within 200 meters from any MRT station
-    distanceThreshold = 200
+    function filterAlwaysOpenLocations(locations) {
+      return locations.filter(locations => locations.is24Hour)
+    }
+
+    // Filter locations within 200 meters from any MRT station
+    distanceThreshold = 300
     const nearbyFairpriceLocations = filterNearbyLocations(fairpriceLocations, stationsData, distanceThreshold)
     const nearbyShengsiongLocations = filterNearbyLocations(shengsiongLocations, stationsData, distanceThreshold)
-    console.log(nearbyShengsiongLocations)
 
     // Function to toggle FairPrice locations
     let showNearby = false;
@@ -608,8 +611,6 @@ import shengsiongLocations from "../scripts/shengsiong-locations.json"
       map.getSource("fairprice-locations").setData({
         type: "FeatureCollection",
         features: data.map((location) => {
-          const is24Hour =
-            location.fromTime == "00:00:00" && location.toTime == "23:59:59";
           return {
             type: "Feature",
             geometry: {
@@ -617,7 +618,7 @@ import shengsiongLocations from "../scripts/shengsiong-locations.json"
               coordinates: [location.long, location.lat],
             },
             properties: {
-              name: location.name + (is24Hour ? " (24h)" : ""),
+              name: location.name + (location.is24Hour ? " (24h)" : ""),
               address: location.address,
               postalCode: location.postalCode,
               phone: location.phone,
@@ -638,7 +639,61 @@ import shengsiongLocations from "../scripts/shengsiong-locations.json"
               coordinates: [location.long, location.lat],
             },
             properties: {
+              name: location.address1 + (location.is24Hour ? " (24h)" : ""),
+              address: location.address,
+              postalCode: location.postalCode,
+              phone: location.phone,
+              storeType: location.storeType,
+            },
+          };
+        }),
+      });
+
+
+      document.getElementById("toggle-fairprice").textContent = showNearby
+        ? "Show All FairPrice Outlet"
+        : "Show FairPrice near MRT";
+    }
+
+    const alwaysOpenFairpriceLocations = filterAlwaysOpenLocations(fairpriceLocations)
+    const alwaysOpenShengsiongLocations = filterAlwaysOpenLocations(shengsiongLocations)
+    let alwaysOpen = false
+    function toggleAlwaysOpen() {
+      alwaysOpen = !alwaysOpen;
+
+      let data = alwaysOpen ? alwaysOpenFairpriceLocations : fairpriceLocations;
+      map.getSource("fairprice-locations").setData({
+        type: "FeatureCollection",
+        features: data.map((location) => {
+          return {
+            type: "Feature",
+            geometry: {
+              type: "Point",
+              coordinates: [location.long, location.lat],
+            },
+            properties: {
               name: location.name + (location.is24Hour ? " (24h)" : ""),
+              address: location.address,
+              postalCode: location.postalCode,
+              phone: location.phone,
+              storeType: location.storeType,
+            },
+          };
+        }),
+      });
+      
+      data = alwaysOpen ? alwaysOpenShengsiongLocations : shengsiongLocations
+      map.getSource("shengsiong-locations").setData({
+        type: "FeatureCollection",
+        features: data.map((location) => {
+          return {
+            type: "Feature",
+            geometry: {
+              type: "Point",
+              coordinates: [location.long, location.lat],
+            },
+            properties: {
+              name: location.address1 + (location.is24Hour ? " (24h)" : ""),
               address: location.address,
               postalCode: location.postalCode,
               phone: location.phone,
@@ -658,8 +713,11 @@ import shengsiongLocations from "../scripts/shengsiong-locations.json"
     document
       .getElementById('toggle-supermarkets')
       .addEventListener("click", toggleNearbyOutlets);
-  }, 1000);
 
+    document
+      .getElementById('toggle-24-hours')
+      .addEventListener("click", toggleAlwaysOpen)
+  }, 1000);
   // extensions end
 
   map.addSource("rail", {
