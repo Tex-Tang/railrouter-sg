@@ -597,116 +597,91 @@ import shengsiongLocations from "../scripts/shengsiong-locations.json"
       return locations.filter(locations => locations.is24Hour)
     }
 
-    // Filter locations within 200 meters from any MRT station
-    distanceThreshold = 300
-    const nearbyFairpriceLocations = filterNearbyLocations(fairpriceLocations, stationsData, distanceThreshold)
-    const nearbyShengsiongLocations = filterNearbyLocations(shengsiongLocations, stationsData, distanceThreshold)
-
-    // Function to toggle FairPrice locations
-    let showNearby = false;
-    function toggleNearbyOutlets() {
-      showNearby = !showNearby;
-
-      let data = showNearby ? nearbyFairpriceLocations : fairpriceLocations;
-      map.getSource("fairprice-locations").setData({
-        type: "FeatureCollection",
-        features: data.map((location) => {
+    function updateMapSource (sourceId, locations) {
+      map.getSource(sourceId).setData({
+        type: 'FeatureCollection',
+        features: locations.map(location => {
           return {
-            type: "Feature",
+            type: 'Feature',
             geometry: {
-              type: "Point",
-              coordinates: [location.long, location.lat],
+              type: 'Point',
+              coordinates: [location.long, location.lat]
             },
             properties: {
-              name: location.name + (location.is24Hour ? " (24h)" : ""),
+              name: location.name + (location.is24Hour ? ' (24h)' : ''),
               address: location.address,
               postalCode: location.postalCode,
               phone: location.phone,
-              storeType: location.storeType,
-            },
-          };
-        }),
-      });
-      
-      data = showNearby ? nearbyShengsiongLocations : shengsiongLocations
-      map.getSource("shengsiong-locations").setData({
-        type: "FeatureCollection",
-        features: data.map((location) => {
-          return {
-            type: "Feature",
-            geometry: {
-              type: "Point",
-              coordinates: [location.long, location.lat],
-            },
-            properties: {
-              name: location.address1 + (location.is24Hour ? " (24h)" : ""),
-              address: location.address,
-              postalCode: location.postalCode,
-              phone: location.phone,
-              storeType: location.storeType,
-            },
-          };
-        }),
-      });
-
-
-      document.getElementById("toggle-fairprice").textContent = showNearby
-        ? "Show All FairPrice Outlet"
-        : "Show FairPrice near MRT";
+              storeType: location.storeType
+            }
+          }
+        })
+      })
     }
+    
+    function getFairPriceLocations () {
+      if (showNearby && alwaysOpen) {
+        return nearbyAndOpenFairpriceLocations
+      } else if (showNearby) {
+        return nearbyFairpriceLocations
+      } else if (alwaysOpen) {
+        return alwaysOpenFairpriceLocations
+      } else {
+        return fairpriceLocations
+      }
+    }
+
+    function getShengSiongLocations () {
+      if (showNearby && alwaysOpen) {
+        return nearbyAndOpenShengsiongLocations
+      } else if (showNearby) {
+        return nearbyShengsiongLocations
+      } else if (alwaysOpen) {
+        return alwaysOpenShengsiongLocations
+      } else {
+        return shengsiongLocations
+      }
+    }
+
+    distanceThreshold = 300
+    const nearbyFairpriceLocations = filterNearbyLocations(
+      fairpriceLocations,
+      stationsData,
+      distanceThreshold
+    )
+    const nearbyShengsiongLocations = filterNearbyLocations(
+      shengsiongLocations,
+      stationsData,
+      distanceThreshold
+    )
+    let showNearby = false
 
     const alwaysOpenFairpriceLocations = filterAlwaysOpenLocations(fairpriceLocations)
     const alwaysOpenShengsiongLocations = filterAlwaysOpenLocations(shengsiongLocations)
     let alwaysOpen = false
+
+    // Filter locations within 200 meters from any MRT station
+    const nearbyAndOpenFairpriceLocations = fairpriceLocations.filter(
+      location =>
+        filterNearbyLocations([location], stationsData, distanceThreshold).length >
+          0 && filterAlwaysOpenLocations([location]).length > 0
+    )
+    const nearbyAndOpenShengsiongLocations = shengsiongLocations.filter(
+      location =>
+        filterNearbyLocations([location], stationsData, distanceThreshold).length >
+          0 && filterAlwaysOpenLocations([location]).length > 0
+    )
+
+    function toggleNearbyOutlets() {
+      showNearby = !showNearby;
+      updateMapSource('fairprice-locations', getFairPriceLocations())
+      updateMapSource('shengsiong-locations', getShengSiongLocations())
+    }
+
     function toggleAlwaysOpen() {
       alwaysOpen = !alwaysOpen;
-
-      let data = alwaysOpen ? alwaysOpenFairpriceLocations : fairpriceLocations;
-      map.getSource("fairprice-locations").setData({
-        type: "FeatureCollection",
-        features: data.map((location) => {
-          return {
-            type: "Feature",
-            geometry: {
-              type: "Point",
-              coordinates: [location.long, location.lat],
-            },
-            properties: {
-              name: location.name + (location.is24Hour ? " (24h)" : ""),
-              address: location.address,
-              postalCode: location.postalCode,
-              phone: location.phone,
-              storeType: location.storeType,
-            },
-          };
-        }),
-      });
-      
-      data = alwaysOpen ? alwaysOpenShengsiongLocations : shengsiongLocations
-      map.getSource("shengsiong-locations").setData({
-        type: "FeatureCollection",
-        features: data.map((location) => {
-          return {
-            type: "Feature",
-            geometry: {
-              type: "Point",
-              coordinates: [location.long, location.lat],
-            },
-            properties: {
-              name: location.address1 + (location.is24Hour ? " (24h)" : ""),
-              address: location.address,
-              postalCode: location.postalCode,
-              phone: location.phone,
-              storeType: location.storeType,
-            },
-          };
-        }),
-      });
-
-
-      document.getElementById("toggle-fairprice").textContent = showNearby
-        ? "Show All FairPrice Outlet"
-        : "Show FairPrice near MRT";
+      updateMapSource('fairprice-locations', getFairPriceLocations())
+      updateMapSource('shengsiong-locations', getShengSiongLocations())
     }
 
     // Add event listener to the button
