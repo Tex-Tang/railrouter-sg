@@ -1,12 +1,10 @@
-# 003992d38016461ea0fd1a11ba9e3e1c
-
 from opencage.geocoder import OpenCageGeocode
 import json, os, re, pprint
 
 BASE_DIR = os.path.dirname(__file__)
 json_path = os.path.join(BASE_DIR, "shengsiong-locations.json")
 
-key = '003992d38016461ea0fd1a11ba9e3e1c'
+key = 'XXX'
 geocoder = OpenCageGeocode(key)
 
 with open(json_path, "r") as f:
