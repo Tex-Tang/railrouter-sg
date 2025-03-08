@@ -1,4 +1,4 @@
-@import '../node_modules/mapbox-gl/dist/mapbox-gl.css';
+@import "../node_modules/mapbox-gl/dist/mapbox-gl.css";
 
 html {
   position: fixed;
@@ -204,7 +204,7 @@ abbr {
   outline: 0;
 }
 .sheet-close:after {
-  content: '';
+  content: "";
   display: block;
   width: 2px;
   height: 20px;
@@ -215,7 +215,7 @@ abbr {
   transform: rotate(45deg);
 }
 .sheet-close:before {
-  content: '';
+  content: "";
   display: block;
   width: 2px;
   height: 20px;
@@ -265,7 +265,7 @@ abbr {
   box-shadow: 0 8px 8px #fff;
 }
 #station header:after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 60%;
@@ -370,8 +370,8 @@ abbr {
 .sheet .exits h3 {
   color: #fffc;
   text-transform: uppercase;
-  margin-top: -.5em;
-  font-size: .85em;
+  margin-top: -0.5em;
+  font-size: 0.85em;
 }
 .exit-btn {
   appearance: none;
@@ -401,7 +401,7 @@ abbr {
 }
 .exits .note {
   color: #fffc;
-  margin: .5em 0 0;
+  margin: 0.5em 0 0;
   padding: 0;
 }
 
@@ -529,7 +529,7 @@ abbr {
   background-color: #fff;
 }
 #search-results li a:after {
-  content: '';
+  content: "";
   display: block;
   width: calc(100% - 32px);
   position: absolute;
@@ -557,7 +557,7 @@ abbr {
   pointer-events: none;
 }
 .crowd-marker:after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   top: 0;
@@ -693,4 +693,35 @@ abbr {
   #search-results {
     width: 480px;
   }
+}
+
+.toggles {
+  position: fixed;
+  z-index: 100;
+  top: 16px;
+  right: 50%;
+  transform: translateX(50%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 0.6em;
+  border-radius: 12px;
+  backdrop-filter: blur(20px) saturate(3);
+  -webkit-backdrop-filter: blur(20px) saturate(3);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+button {
+  cursor: pointer;
+  background-color: teal;
+  color: #fff;
+  border: 0;
+  border-radius: 12px;
+  padding: 8px;
+  font-weight: bold;
+  font-size: 1em;
+  font-family: inherit;
+  outline: 0;
 }

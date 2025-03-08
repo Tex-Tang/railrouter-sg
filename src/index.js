@@ -497,7 +497,7 @@ import fairpriceLocations from "./fairprice-locations.json";
       source: "fairprice-locations",
       layout: {
         "text-field": ["get", "name"],
-        "text-size": ["interpolate", ["linear"], ["zoom"], 13, 12, 16, 16],
+        "text-size": ["interpolate", ["linear"], ["zoom"], 13, 0, 14, 14],
         "text-font": ["DIN Pro Medium", "Arial Unicode MS Regular"],
         "text-anchor": "bottom",
         "text-offset": [0, -0.8],
@@ -514,6 +514,66 @@ import fairpriceLocations from "./fairprice-locations.json";
         "text-halo-blur": 1,
       },
     });
+
+    // Function to calculate the distance between two coordinates in meters
+    function calculateDistance(coord1, coord2) {
+      const R = 6371e3; // Earth's radius in meters
+      const lat1 = coord1[1] * (Math.PI / 180);
+      const lat2 = coord2[1] * (Math.PI / 180);
+      const deltaLat = (coord2[1] - coord1[1]) * (Math.PI / 180);
+      const deltaLon = (coord2[0] - coord1[0]) * (Math.PI / 180);
+
+      const a =
+        Math.sin(deltaLat / 2) * Math.sin(deltaLat / 2) +
+        Math.cos(lat1) *
+          Math.cos(lat2) *
+          Math.sin(deltaLon / 2) *
+          Math.sin(deltaLon / 2);
+      const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+
+      return R * c;
+    }
+
+    // Filter FairPrice locations within 200 meters from any MRT station
+    const nearbyFairpriceLocations = fairpriceLocations.filter((location) => {
+      const fairpriceCoord = [location.long, location.lat];
+      return stationsData.some((station) => {
+        const stationCoord = station.geometry.coordinates;
+        return calculateDistance(fairpriceCoord, stationCoord) <= 200;
+      });
+    });
+
+    // Function to toggle FairPrice locations
+    let showNearby = false;
+    function toggleFairpriceLocations() {
+      showNearby = !showNearby;
+      const data = showNearby ? nearbyFairpriceLocations : fairpriceLocations;
+      map.getSource("fairprice-locations").setData({
+        type: "FeatureCollection",
+        features: data.map((location) => ({
+          type: "Feature",
+          geometry: {
+            type: "Point",
+            coordinates: [location.long, location.lat],
+          },
+          properties: {
+            name: location.name,
+            address: location.address,
+            postalCode: location.postalCode,
+            phone: location.phone,
+            storeType: location.storeType,
+          },
+        })),
+      });
+      document.getElementById("toggle-fairprice").textContent = showNearby
+        ? "Show All FairPrice Outlet"
+        : "Show FairPrice near MRT";
+    }
+
+    // Add event listener to the button
+    document
+      .getElementById("toggle-fairprice")
+      .addEventListener("click", toggleFairpriceLocations);
   }, 1000);
 
   // extensions end
