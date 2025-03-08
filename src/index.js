@@ -550,20 +550,24 @@ import fairpriceLocations from "./fairprice-locations.json";
       const data = showNearby ? nearbyFairpriceLocations : fairpriceLocations;
       map.getSource("fairprice-locations").setData({
         type: "FeatureCollection",
-        features: data.map((location) => ({
-          type: "Feature",
-          geometry: {
-            type: "Point",
-            coordinates: [location.long, location.lat],
-          },
-          properties: {
-            name: location.name,
-            address: location.address,
-            postalCode: location.postalCode,
-            phone: location.phone,
-            storeType: location.storeType,
-          },
-        })),
+        features: data.map((location) => {
+          const is24Hour =
+            location.fromTime == "00:00:00" && location.toTime == "23:59:59";
+          return {
+            type: "Feature",
+            geometry: {
+              type: "Point",
+              coordinates: [location.long, location.lat],
+            },
+            properties: {
+              name: location.name + (is24Hour ? " (24h)" : ""),
+              address: location.address,
+              postalCode: location.postalCode,
+              phone: location.phone,
+              storeType: location.storeType,
+            },
+          };
+        }),
       });
       document.getElementById("toggle-fairprice").textContent = showNearby
         ? "Show All FairPrice Outlet"
