@@ -4,538 +4,615 @@
         "postal_code": "560161",
         "address1": "Blk 161 Ang Mo Kio Avenue 4",
         "lat": 1.3742418,
-        "long": 103.8394691
+        "long": 103.8394691,
+        "name": "Ang Mo Kio Avenue 4"
     },
     {
         "is24Hour": false,
         "postal_code": "567720",
         "address1": "2 Ang Mo Kio Drive",
         "lat": 1.3778796,
-        "long": 103.8562274
+        "long": 103.8562274,
+        "name": "2 Ang Mo Kio Drive"
     },
     {
         "is24Hour": true,
         "postal_code": "540351",
         "address1": "Blk 351 Anchorvale Road",
         "lat": 1.3933332,
-        "long": 103.8868691
+        "long": 103.8868691,
+        "name": "Anchorvale Road"
     },
     {
         "is24Hour": false,
         "postal_code": "540338",
         "address1": "Blk 338 Anchorvale Crescent",
         "lat": 1.399153,
-        "long": 103.8896595
+        "long": 103.8896595,
+        "name": "Anchorvale Crescent"
     },
     {
         "is24Hour": true,
         "postal_code": "560122",
         "address1": "Blk 122 Ang Mo Kio Avenue 3",
         "lat": 1.3701872,
-        "long": 103.8432629
+        "long": 103.8432629,
+        "name": "Ang Mo Kio Avenue 3"
     },
     {
         "is24Hour": true,
         "postal_code": "560233",
         "address1": "Blk 233 Ang Mo Kio Avenue 3",
         "lat": 1.3676377,
-        "long": 103.8367279
+        "long": 103.8367279,
+        "name": "Ang Mo Kio Avenue 3"
     },
     {
         "is24Hour": true,
         "postal_code": "820301",
         "address1": "Blk 301 Punggol Central",
         "lat": 1.4035047,
-        "long": 103.9059745
+        "long": 103.9059745,
+        "name": "Punggol Central"
     },
     {
         "is24Hour": false,
         "postal_code": "820671",
         "address1": "Blk 671 Edgefield Plains",
         "lat": 1.4056529,
-        "long": 103.9119979
+        "long": 103.9119979,
+        "name": "Edgefield Plains"
     },
     {
         "is24Hour": true,
         "postal_code": "790473",
         "address1": "Blk 473 Fernvale Street",
         "lat": 1.397796,
-        "long": 103.8814526
+        "long": 103.8814526,
+        "name": "Fernvale Street"
     },
     {
         "is24Hour": true,
         "postal_code": "790417",
         "address1": "Blk 417 Fernvale Link",
         "lat": 1.3911827,
-        "long": 103.8803757
+        "long": 103.8803757,
+        "name": "Fernvale Link"
     },
     {
         "is24Hour": true,
         "postal_code": "790465",
         "address1": "Blk 465 Fernvale Road",
         "lat": 1.3981504,
-        "long": 103.8766551
+        "long": 103.8766551,
+        "name": "Fernvale Road"
     },
     {
         "is24Hour": true,
         "postal_code": "790455",
         "address1": "Blk 455 Sengkang West Avenue",
         "lat": 1.3920647,
-        "long": 103.8711952
+        "long": 103.8711952,
+        "name": "Sengkang West Avenue"
     },
     {
         "is24Hour": false,
         "postal_code": "530377",
         "address1": "377 Hougang Street 32",
         "lat": 1.3630064,
-        "long": 103.8952602
+        "long": 103.8952602,
+        "name": "377 Hougang Street 32"
     },
     {
         "is24Hour": true,
         "postal_code": "820231",
         "address1": "231 Sumang Lane",
         "lat": 1.4019589,
-        "long": 103.8921939
+        "long": 103.8921939,
+        "name": "231 Sumang Lane"
     },
     {
         "is24Hour": true,
         "postal_code": "821312",
         "address1": "312A Sumang Link",
         "lat": 1.4110021,
-        "long": 103.9003782
+        "long": 103.9003782,
+        "name": "312A Sumang Link"
     },
     {
         "is24Hour": true,
         "postal_code": "554913",
         "address1": "19 Serangoon North Avenue 5 Singapore 554913",
         "lat": 1.3757619,
-        "long": 103.8717188
+        "long": 103.8717188,
+        "name": "19 Serangoon North Avenue 5 Singapore 554913"
     },
     {
         "is24Hour": true,
         "postal_code": "821660",
         "address1": "Blk 660A Edgedale Plains",
         "lat": 1.4025452,
-        "long": 103.9163794
+        "long": 103.9163794,
+        "name": "Edgedale Plains"
     },
     {
         "is24Hour": true,
         "postal_code": "651154",
         "address1": "Blk 154A Bukit Batok West Avenue 8",
         "lat": 1.3472631,
-        "long": 103.7438985
+        "long": 103.7438985,
+        "name": "Bukit Batok West Avenue 8"
     },
     {
         "is24Hour": true,
         "postal_code": "121420",
         "address1": "Blk 420A Clementi Avenue 1",
         "lat": 1.309514,
-        "long": 103.768408
+        "long": 103.768408,
+        "name": "Clementi Avenue 1"
     },
     {
         "is24Hour": true,
         "postal_code": "120352",
         "address1": "Blk 352 Clementi Avenue 2",
         "lat": 1.3146209,
-        "long": 103.7715967
+        "long": 103.7715967,
+        "name": "Clementi Avenue 2"
     },
     {
         "is24Hour": true,
         "postal_code": "121209",
         "address1": "Blk 209A Clementi Avenue 6",
         "lat": 1.3220833,
-        "long": 103.7638219
+        "long": 103.7638219,
+        "name": "Clementi Avenue 6"
     },
     {
         "is24Hour": true,
         "postal_code": "120720",
         "address1": "Blk 720 Clementi West Street 2",
         "lat": 1.3024153,
-        "long": 103.7637226
+        "long": 103.7637226,
+        "name": "Clementi West Street 2"
     },
     {
         "is24Hour": true,
         "postal_code": "670446",
         "address1": "Blk 446 Fajar Road",
         "lat": 1.3840843,
-        "long": 103.7702831
+        "long": 103.7702831,
+        "name": "Fajar Road"
     },
     {
         "is24Hour": false,
         "postal_code": "649486",
         "address1": "7 Jurong West Avenue 5",
         "lat": 1.3488044,
-        "long": 103.7034043
+        "long": 103.7034043,
+        "name": "7 Jurong West Avenue 5"
     },
     {
         "is24Hour": false,
         "postal_code": "677899",
         "address1": "1 Woodlands Road",
         "lat": 1.3974556,
-        "long": 103.754314
+        "long": 103.754314,
+        "name": "1 Woodlands Road"
     },
     {
         "is24Hour": true,
         "postal_code": "618642",
         "address1": "3 Yuan Ching Rd",
         "lat": 1.3255255,
-        "long": 103.7251144
+        "long": 103.7251144,
+        "name": "3 Yuan Ching Rd"
     },
     {
         "is24Hour": true,
         "postal_code": "640544",
         "address1": "Blk 544 Jurong West Street 42",
         "lat": 1.3524184,
-        "long": 103.7157228
+        "long": 103.7157228,
+        "name": "Jurong West Street 42"
     },
     {
         "is24Hour": true,
         "postal_code": "670547",
         "address1": "Blk 547 Segar Road",
         "lat": 1.3882892,
-        "long": 103.7695592
+        "long": 103.7695592,
+        "name": "Segar Road"
     },
     {
         "is24Hour": false,
         "postal_code": "670643",
         "address1": "Blk 643 Senja Close",
         "lat": 1.3886665,
-        "long": 103.7627578
+        "long": 103.7627578,
+        "name": "Senja Close"
     },
     {
         "is24Hour": true,
         "postal_code": "650292",
         "address1": "292 Bukit Batok East Avenue 6",
         "lat": 1.3444352,
-        "long": 103.7558351
+        "long": 103.7558351,
+        "name": "292 Bukit Batok East Avenue 6"
     },
     {
         "is24Hour": true,
         "postal_code": "600061",
         "address1": "Blk 61 Teban Gardens Road",
         "lat": 1.3220967,
-        "long": 103.7384605
+        "long": 103.7384605,
+        "name": "Teban Gardens Road"
     },
     {
         "is24Hour": true,
         "postal_code": "680018",
         "address1": "Blk 18 Teck Whye Lane",
         "lat": 1.3783596,
-        "long": 103.754117
+        "long": 103.754117,
+        "name": "Teck Whye Lane"
     },
     {
         "is24Hour": false,
         "postal_code": "650467",
         "address1": "Blk 467 Bukit Batok West Avenue 9",
         "lat": 1.3571595,
-        "long": 103.7434517
+        "long": 103.7434517,
+        "name": "Bukit Batok West Avenue 9"
     },
     {
         "is24Hour": true,
         "postal_code": "650440",
         "address1": "Blk 440 Bukit Batok West Avenue 8",
         "lat": 1.3556983,
-        "long": 103.7392906
+        "long": 103.7392906,
+        "name": "Bukit Batok West Avenue 8"
     },
     {
         "is24Hour": false,
         "postal_code": "650451",
         "address1": "451 Bukit Batok West Avenue 6",
         "lat": 1.3530072,
-        "long": 103.7434581
+        "long": 103.7434581,
+        "name": "451 Bukit Batok West Avenue 6"
     },
     {
         "is24Hour": true,
         "postal_code": "750105",
         "address1": "Blk 105 Canberra Street",
         "lat": 1.4488354,
-        "long": 103.8323588
+        "long": 103.8323588,
+        "name": "Canberra Street"
     },
     {
         "is24Hour": true,
         "postal_code": "760675",
         "address1": "Blk 675 Yishun Avenue 4",
         "lat": 1.4199951,
-        "long": 103.8435885
+        "long": 103.8435885,
+        "name": "Yishun Avenue 4"
     },
     {
         "is24Hour": true,
         "postal_code": "762471",
         "address1": "Blk 471B Yishun Street 42",
         "lat": 1.4262501,
-        "long": 103.8525104
+        "long": 103.8525104,
+        "name": "Yishun Street 42"
     },
     {
         "is24Hour": true,
         "postal_code": "730301",
         "address1": "Blk 301 Woodlands Street 31",
         "lat": 1.4316695,
-        "long": 103.77328
+        "long": 103.77328,
+        "name": "Woodlands Street 31"
     },
     {
         "is24Hour": false,
         "postal_code": "768897",
         "address1": "18 Yishun Avenue 9",
         "lat": 1.4332205,
-        "long": 103.8414882
+        "long": 103.8414882,
+        "name": "18 Yishun Avenue 9"
     },
     {
         "is24Hour": true,
         "postal_code": "760845",
         "address1": "Blk 845 Yishun Street 81",
         "lat": 1.4160561,
-        "long": 103.8349402
+        "long": 103.8349402,
+        "name": "Yishun Street 81"
     },
     {
         "is24Hour": true,
         "postal_code": "730202",
         "address1": "Blk 202 Marsiling Drive",
         "lat": 1.4431022,
-        "long": 103.775057
+        "long": 103.775057,
+        "name": "Marsiling Drive"
     },
     {
         "is24Hour": true,
         "postal_code": "730182",
         "address1": "Blk 182 Woodlands Street 13",
         "lat": 1.4351405,
-        "long": 103.7758409
+        "long": 103.7758409,
+        "name": "Woodlands Street 13"
     },
     {
         "is24Hour": false,
         "postal_code": "738623",
         "address1": "Blk 4 Woodlands Street 12",
         "lat": 1.4334888,
-        "long": 103.7797903
+        "long": 103.7797903,
+        "name": "Woodlands Street 12"
     },
     {
         "is24Hour": true,
         "postal_code": "730573",
         "address1": "Blk 573 Woodlands Drive 16",
         "lat": 1.4310337,
-        "long": 103.7987432
+        "long": 103.7987432,
+        "name": "Woodlands Drive 16"
     },
     {
         "is24Hour": false,
         "postal_code": "757177",
         "address1": "200 Woodlands Industrial Park E7",
         "lat": 1.4501993,
-        "long": 103.7964897
+        "long": 103.7964897,
+        "name": "200 Woodlands Industrial Park E7"
     },
     {
         "is24Hour": true,
         "postal_code": "735785",
         "address1": "Blk 785E Woodlands Rise",
         "lat": 1.4469237,
-        "long": 103.805523
+        "long": 103.805523,
+        "name": "Woodlands Rise"
     },
     {
         "is24Hour": false,
         "postal_code": "380118",
         "address1": "Blk 118 Aljunied Avenue 2",
         "lat": 1.3200052,
-        "long": 103.8876023
+        "long": 103.8876023,
+        "name": "Aljunied Avenue 2"
     },
     {
         "is24Hour": true,
         "postal_code": "570512",
         "address1": "Blk 512 Bishan Street 13",
         "lat": 1.349629,
-        "long": 103.8498763
+        "long": 103.8498763,
+        "name": "Bishan Street 13"
     },
     {
         "is24Hour": true,
         "postal_code": "380011",
         "address1": "Blk 11 Upper Boon Keng Road",
         "lat": 1.3141813,
-        "long": 103.8706845
+        "long": 103.8706845,
+        "name": "Upper Boon Keng Road"
     },
     {
         "is24Hour": true,
         "postal_code": "160052",
         "address1": "Blk 52 Chin Swee Road",
         "lat": 1.2877346,
-        "long": 103.8398111
+        "long": 103.8398111,
+        "name": "Chin Swee Road"
     },
     {
         "is24Hour": true,
         "postal_code": "141088",
         "address1": "Blk 88 Tanglin Halt Road",
         "lat": 1.3010291,
-        "long": 103.7985635
+        "long": 103.7985635,
+        "name": "Tanglin Halt Road"
     },
     {
         "is24Hour": false,
         "postal_code": "390091",
         "address1": "Blk 91 Jalan Satu",
         "lat": 1.3098676,
-        "long": 103.8879831
+        "long": 103.8879831,
+        "name": "Jalan Satu"
     },
     {
         "is24Hour": true,
         "postal_code": "389344",
         "address1": "301 Geylang Road BCH Building",
         "lat": 1.3127734,
-        "long": 103.878652
+        "long": 103.878652,
+        "name": "301 Geylang Road BCH Building"
     },
     {
         "is24Hour": true,
         "postal_code": "270025",
         "address1": "25 Ghim Moh Link",
         "lat": 1.3081737,
-        "long": 103.7862821
+        "long": 103.7862821,
+        "name": "25 Ghim Moh Link"
     },
     {
         "is24Hour": true,
         "postal_code": "209037",
         "address1": "1 Jalan Berseh",
         "lat": 1.3076796,
-        "long": 103.8572004
+        "long": 103.8572004,
+        "name": "1 Jalan Berseh"
     },
     {
         "is24Hour": true,
         "postal_code": "310004",
         "address1": "Blk 4 Lorong 7 Toa Payoh",
         "lat": 1.3391094,
-        "long": 103.8558209
+        "long": 103.8558209,
+        "name": "Lorong 7 Toa Payoh"
     },
     {
         "is24Hour": true,
         "postal_code": "310181",
         "address1": "Blk 181 Lorong 4 Toa Payoh",
         "lat": 1.3335688,
-        "long": 103.8510202
+        "long": 103.8510202,
+        "name": "Lorong 4 Toa Payoh"
     },
     {
         "is24Hour": true,
         "postal_code": "372018",
         "address1": "18B Circuit Road",
         "lat": 1.3290548,
-        "long": 103.8877655
+        "long": 103.8877655,
+        "name": "18B Circuit Road"
     },
     {
         "is24Hour": true,
         "postal_code": "321108",
         "address1": "Blk 108 McNair Road",
         "lat": 1.3219831,
-        "long": 103.8595831
+        "long": 103.8595831,
+        "name": "McNair Road"
     },
     {
         "is24Hour": false,
         "postal_code": "358361",
         "address1": "6 Potong Pasir Avenue 2",
         "lat": 1.3326902,
-        "long": 103.8670784
+        "long": 103.8670784,
+        "name": "6 Potong Pasir Avenue 2"
     },
     {
         "is24Hour": false,
         "postal_code": "571410",
         "address1": "Blk 410A Sin Ming Avenue",
         "lat": 1.363317,
-        "long": 103.8353662
+        "long": 103.8353662,
+        "name": "Sin Ming Avenue"
     },
     {
         "is24Hour": true,
         "postal_code": "142031",
         "address1": "Blk 31A Margaret Drive",
         "lat": 1.2984643,
-        "long": 103.8039771
+        "long": 103.8039771,
+        "name": "Margaret Drive"
     },
     {
         "is24Hour": true,
         "postal_code": "141085",
         "address1": "85 Dawson Road",
         "lat": 1.2953925,
-        "long": 103.8100226
+        "long": 103.8100226,
+        "name": "85 Dawson Road"
     },
     {
         "is24Hour": false,
         "postal_code": "574424",
         "address1": "200 Upper Thomson Road",
         "lat": 1.3518641,
-        "long": 103.8360587
+        "long": 103.8360587,
+        "name": "200 Upper Thomson Road"
     },
     {
         "is24Hour": false,
         "postal_code": "360212",
         "address1": "Blk 212 Bidadari Park Drive",
         "lat": 1.3424146,
-        "long": 103.8757497
+        "long": 103.8757497,
+        "name": "Bidadari Park Drive"
     },
     {
         "is24Hour": true,
         "postal_code": "460209",
         "address1": "Blk 209 New Upper Changi Road",
         "lat": 1.3248515,
-        "long": 103.9313909
+        "long": 103.9313909,
+        "name": "New Upper Changi Road"
     },
     {
         "is24Hour": true,
         "postal_code": "460115",
         "address1": "Blk 115 Bedok North Road",
         "lat": 1.3313891,
-        "long": 103.9368316
+        "long": 103.9368316,
+        "name": "Bedok North Road"
     },
     {
         "is24Hour": true,
         "postal_code": "461539",
         "address1": "Blk 539A Bedok North Street 3",
         "lat": 1.3323577,
-        "long": 103.9254905
+        "long": 103.9254905,
+        "name": "Bedok North Street 3"
     },
     {
         "is24Hour": false,
         "postal_code": "460151",
         "address1": "151 Bedok South Road",
         "lat": 1.318014,
-        "long": 103.9480874
+        "long": 103.9480874,
+        "name": "151 Bedok South Road"
     },
     {
         "is24Hour": true,
         "postal_code": "514527",
         "address1": "Blk 527D Pasir Ris Street 51",
         "lat": 1.3696113,
-        "long": 103.9480039
+        "long": 103.9480039,
+        "name": "Pasir Ris Street 51"
     },
     {
         "is24Hour": true,
         "postal_code": "510623",
         "address1": "Blk 623 Elias Road",
         "lat": 1.3786806,
-        "long": 103.9421496
+        "long": 103.9421496,
+        "name": "Elias Road"
     },
     {
         "is24Hour": false,
         "postal_code": "510258",
         "address1": "Blk 258 Pasir Ris Street 21",
         "lat": 1.3666768,
-        "long": 103.9641877
+        "long": 103.9641877,
+        "name": "Pasir Ris Street 21"
     },
     {
         "is24Hour": true,
         "postal_code": "471739",
         "address1": "Blk 739A Bedok Reservoir Road",
         "lat": 1.3381916,
-        "long": 103.9234652
+        "long": 103.9234652,
+        "name": "Bedok Reservoir Road"
     },
     {
         "is24Hour": true,
         "postal_code": "520506",
         "address1": "506 Tampines Central 1",
         "lat": 1.355917,
-        "long": 103.945907
+        "long": 103.945907,
+        "name": "506 Tampines Central 1"
     },
     {
         "is24Hour": false,
         "postal_code": "521602",
         "address1": "602A Tampines Avenue 9",
         "lat": 1.3604737,
-        "long": 103.9356696
+        "long": 103.9356696,
+        "name": "602A Tampines Avenue 9"
     },
     {
         "is24Hour": false,
         "postal_code": "523872",
         "address1": "872C Tampines Street 86",
         "lat": 1.3552061,
-        "long": 103.9315744
+        "long": 103.9315744,
+        "name": "872C Tampines Street 86"
     }
 ]
