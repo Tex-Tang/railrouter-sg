@@ -530,7 +530,6 @@ import shengsiongLocations from "../scripts/shengsiong-locations.json"
         "text-allow-overlap": true,
         "icon-image": "fairprice-logo",
         "icon-size": ["interpolate", ["linear"], ["zoom"], 13, 0.3, 15, 0.5],
-        "icon-ignore-placement": true,
         "icon-allow-overlap": true,
       },
       paint: {
@@ -554,7 +553,6 @@ import shengsiongLocations from "../scripts/shengsiong-locations.json"
         "text-allow-overlap": true,
         "icon-image": "shengsiong-logo",
         "icon-size": ["interpolate", ["linear"], ["zoom"], 13, 0.3, 15, 0.5],
-        "icon-ignore-placement": true,
         "icon-allow-overlap": true,
       },
       paint: {
@@ -643,17 +641,10 @@ import shengsiongLocations from "../scripts/shengsiong-locations.json"
       }
     }
 
-    distanceThreshold = 300
-    const nearbyFairpriceLocations = filterNearbyLocations(
-      fairpriceLocations,
-      stationsData,
-      distanceThreshold
-    )
-    const nearbyShengsiongLocations = filterNearbyLocations(
-      shengsiongLocations,
-      stationsData,
-      distanceThreshold
-    )
+    const distanceThreshold = 300
+    
+    const nearbyFairpriceLocations = filterNearbyLocations(fairpriceLocations, stationsData, distanceThreshold)
+    const nearbyShengsiongLocations = filterNearbyLocations(shengsiongLocations, stationsData, distanceThreshold)
     let showNearby = false
 
     const alwaysOpenFairpriceLocations = filterAlwaysOpenLocations(fairpriceLocations)
