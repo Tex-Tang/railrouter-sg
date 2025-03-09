@@ -506,7 +506,7 @@ import shengsiongLocations from "../scripts/shengsiong-locations.json"
               coordinates: [location.long, location.lat],
             },
             properties: {
-              name: location.address1 + (location.is24Hour ? " (24h)" : ""),
+              name: location.name + (location.is24Hour ? " (24h)" : ""),
               address: location.address1,
               postalCode: location.postalCode,
               storeType: 'Sheng Siong'
