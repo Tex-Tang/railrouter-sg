@@ -591,8 +591,21 @@ import shengsiongLocations from "../scripts/shengsiong-locations.json"
       })
     }
 
-    function filterAlwaysOpenLocations(locations) {
-      return locations.filter(locations => locations.is24Hour)
+    function filterAlwaysOpenLocations(locations, useOriginalFlag) {
+      // flag for shengsiong can be used, but not fairprice
+      return locations.filter(location => {
+        if (useOriginalFlag) {
+          return location.is24Hour
+        }
+        return location.fromTime === '00:00:00' && location.toTime === '23:59:59'
+      })  
+    }
+
+    function filterAlwaysOpenAndNearby(locations, stations, distanceThreshold, useOriginalFlag) {
+      return filterAlwaysOpenLocations(
+        filterNearbyLocations(locations, stations, distanceThreshold),
+        useOriginalFlag
+      )
     }
 
     function updateMapSource (sourceId, locations) {
@@ -619,7 +632,7 @@ import shengsiongLocations from "../scripts/shengsiong-locations.json"
     
     function getFairPriceLocations () {
       if (showNearby && alwaysOpen) {
-        return nearbyAndOpenFairpriceLocations
+        return nearbyAndAlwaysOpenFairpriceLocations
       } else if (showNearby) {
         return nearbyFairpriceLocations
       } else if (alwaysOpen) {
@@ -631,7 +644,7 @@ import shengsiongLocations from "../scripts/shengsiong-locations.json"
 
     function getShengSiongLocations () {
       if (showNearby && alwaysOpen) {
-        return nearbyAndOpenShengsiongLocations
+        return nearbyAndAlwaysOpenShengsiongLocations
       } else if (showNearby) {
         return nearbyShengsiongLocations
       } else if (alwaysOpen) {
@@ -647,21 +660,12 @@ import shengsiongLocations from "../scripts/shengsiong-locations.json"
     const nearbyShengsiongLocations = filterNearbyLocations(shengsiongLocations, stationsData, distanceThreshold)
     let showNearby = false
 
-    const alwaysOpenFairpriceLocations = filterAlwaysOpenLocations(fairpriceLocations)
-    const alwaysOpenShengsiongLocations = filterAlwaysOpenLocations(shengsiongLocations)
+    const alwaysOpenFairpriceLocations = filterAlwaysOpenLocations(fairpriceLocations, false)
+    const alwaysOpenShengsiongLocations = filterAlwaysOpenLocations(shengsiongLocations, true)
     let alwaysOpen = false
 
-    // Filter locations within 200 meters from any MRT station
-    const nearbyAndOpenFairpriceLocations = fairpriceLocations.filter(
-      location =>
-        filterNearbyLocations([location], stationsData, distanceThreshold).length >
-          0 && filterAlwaysOpenLocations([location]).length > 0
-    )
-    const nearbyAndOpenShengsiongLocations = shengsiongLocations.filter(
-      location =>
-        filterNearbyLocations([location], stationsData, distanceThreshold).length >
-          0 && filterAlwaysOpenLocations([location]).length > 0
-    )
+    const nearbyAndAlwaysOpenFairpriceLocations = filterAlwaysOpenAndNearby(fairpriceLocations, stationsData, distanceThreshold, false)
+    const nearbyAndAlwaysOpenShengsiongLocations = filterAlwaysOpenAndNearby(shengsiongLocations, stationsData, distanceThreshold, true)
 
     function toggleNearbyOutlets() {
       showNearby = !showNearby;
